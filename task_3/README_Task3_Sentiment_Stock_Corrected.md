@@ -1,59 +1,57 @@
+# ✈️ Sentiment Classification with Stemming – Airline Tweets
 
-# 📊 Task 3 – Level 3: Sentiment Analysis and Stock Price Correlation
+Este projeto faz parte do desafio **Task 3 - Level 3 (Advanced)** da Codveda, com foco em **classificação de sentimentos** usando **processamento de linguagem natural (NLP)**.
 
-This project addresses the Task 3 - Level 3 requirement using **only the Sentiment dataset** as the core component.
+## 📌 Objetivo
 
-As an enhancement, it includes optional analysis of stock price movement (AAPL) to explore correlations.
+Classificar tweets relacionados a companhias aéreas em três categorias:
+- **Negative**
+- **Neutral**
+- **Positive**
 
----
+Utilizamos técnicas de **limpeza textual**, **stemming**, **vetorização TF-IDF** e treinamento de modelo com **Logistic Regression**.
 
-## 📁 Datasets Used
+## 📁 Dataset
 
-- `3) Sentiment dataset.csv` – social media posts with timestamp and sentiment labels
-- `2) Stock Prices Data Set.csv` – historical price data for various stocks
+O conjunto de dados utilizado foi o `sentiment_dataset.csv`, contendo colunas como:
+- `Text`: texto original do tweet
+- `Sentiment`: sentimento anotado
 
----
+## 🛠️ Etapas Realizadas
 
-## 🔍 Part 1: Sentiment Score Aggregation
+1. **Pré-processamento** com:
+   - Remoção de URLs e caracteres especiais
+   - Tokenização com `nltk`
+   - Eliminação de stopwords
+   - Aplicação de stemming (`PorterStemmer`)
 
-- Cleaned and timestamped textual data
-- Converted sentiment labels to numeric scores: `positive = 1`, `neutral = 0`, `negative = -1`
-- Aggregated average sentiment score by day
-- Merged with AAPL stock prices
-- Correlated sentiment trend with price movements
+2. **Vetorização** com `TfidfVectorizer`.
 
-> Notebook: `Task3_Sentiment_vs_Stock_Movement.ipynb`
+3. **Split de treino e teste** com verificação e tratamento de valores nulos:
+   - Remoção se percentual for baixo
+   - Interpolação se percentual for alto
 
----
+4. **Treinamento do modelo**:
+   - `LogisticRegression` do `scikit-learn`
 
-## 🧠 Semantic Embedding Analysis (Word Vectors)
+5. **Avaliação**:
+   - `classification_report` com precisão, recall e F1-score
+   - Mapeamento de rótulos para visualização legível
 
-In addition to standard sentiment aggregation, this extension applies **GloVe word embeddings** to quantify the **semantic drift** of public discourse over time.
+## 📦 Bibliotecas Utilizadas
 
-### 🔍 Techniques Used:
-- Pretrained GloVe vectors (`glove-wiki-gigaword-100`)
-- Sentence embedding: average word vectors
-- Daily semantic drift: cosine similarity between consecutive days
-- Comparison with daily **% change in AAPL stock price**
+- `pandas`
+- `scikit-learn`
+- `nltk`
+- `re`
+- `matplotlib` (opcional para visualizações)
 
-### 📈 Example Output:
+## 📈 Resultados
 
-- Semantic similarity dropped significantly on days with major stock fluctuations.
-- This approach adds **language-awareness** and **contextual tracking** to financial sentiment analysis.
+O modelo apresentou bom desempenho na classificação de sentimentos, com métricas consistentes entre treino e teste. A pipeline de NLP foi desenvolvida para ser reusável e adaptável a outros conjuntos de dados.
 
-> Notebook: `Task3_SemanticEmbedding_vs_Stock.ipynb`
+## 🚀 Execução
 
----
-
-## ✅ Conclusion
-
-By combining **classic sentiment scoring** and **modern semantic embeddings**, this project provides a richer framework for understanding how online discourse might signal or reflect market behavior.
-
----
-
-## 🚀 Tools & Libraries
-
-- Python, Pandas, Matplotlib, Seaborn
-- Gensim (GloVe embeddings)
-- Scikit-learn (cosine similarity)
-
+Certifique-se de ter as dependências instaladas:
+```bash
+pip install pandas scikit-learn nltk matplotlib
