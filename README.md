@@ -22,7 +22,7 @@ This repository showcases three distinct projects demonstrating skills in data e
 
 ## 📽️ Final Project Video
 
-🔗 Video demo on LinkedIn: *[to be added]*  
+🔗 Video demo on LinkedIn: (https://www.linkedin.com/posts/leao-neto_finalizando-com-chave-de-ouro-o-codveda-activity-7356504828979666944-2dh_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA2zu2oBKMyVv0SdHuwR-M1msTv1FkbsOm8) 
 🔗 Portfolio: [github.com/leaop/CODEVA_project]
 
 ## 📌 Internship Details
