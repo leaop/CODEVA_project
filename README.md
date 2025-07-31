@@ -1,14 +1,14 @@
 # Codveda Data Science Internship 🚀
 
-Welcome to my Data Science Internship projects at [Codveda Technologies](https://www.codveda.com), developed between **July 19, 2025 and August 19, 2025**.
+Welcome to my Data Science Internship projects at **Codveda Technologies**, developed between **July 19, 2025** and **August 19, 2025**.
 
-This repository contains the tasks I completed as part of the internship, demonstrating skills in data analysis, machine learning, and real-world problem solving.
+This repository showcases three distinct projects demonstrating skills in data extraction, data preprocessing, modeling, evaluation, and NLP.
 
 ## 📁 Project Structure
 
-- `task-1_web-scraping/` — Data collection from a dynamic website using BeautifulSoup.
-- `task-2_classification/` — Logistic Regression for categorical prediction with performance evaluation.
-- `task-3_nlp/` — Text classification using NLP techniques and model building.
+- `task-1_web-scraping/` — Data collection from a dynamic website using BeautifulSoup and data cleaning.
+- `task-2_classification/` — Logistic Regression model to predict categorical outcomes, with model evaluation.
+- `task-3_nlp/` — Sentiment classification using Natural Language Processing techniques and TF-IDF.
 
 ## 🛠️ Technologies Used
 
@@ -17,23 +17,24 @@ This repository contains the tasks I completed as part of the internship, demons
 - scikit-learn
 - BeautifulSoup
 - matplotlib, seaborn
-- nltk / spaCy (for NLP)
+- nltk (for text preprocessing)
 - TensorFlow / Keras (if neural networks used)
 
 ## 📽️ Final Project Video
 
-📌 [Link to video demo on LinkedIn](#) *(twill be add ASAP)*
+🔗 Video demo on LinkedIn: *[to be added]*  
+🔗 Portfolio: [github.com/leaop/CODEVA_project]
 
 ## 📌 Internship Details
 
-- **Internship Period**: 19/07/2025 – 19/08/2025
-- **Position**: Data Science Intern
-- **Company**: [Codveda Technologies](https://www.codveda.com)
+- Internship Period: **19/07/2025 – 19/08/2025**
+- Position: **Data Science Intern**
+- Company: **Codveda Technologies**
 
 ## 🔖 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ---
 
-> Developed with 💻 by [Leão Neto](https://www.linkedin.com/in/leao-neto/)
+Developed with 💻 by **Leão Neto**
